@@ -38,7 +38,7 @@ const Comformation = () => {
     <div
       className={`w-[350px] ${
         confirmationOpen ? "top-5" : "top-[-100%]"
-      } z-[1000] transition-all duration-300 ease-in-out  overflow-hidden px-3 py-4 border bg-white rounded-xl border-solid border-[#FE6903] flex flex-col items-center justify-center gap-3  fixed top-5 left-1/2 -translate-x-1/2`}
+      } z-[10000] transition-all duration-300 ease-in-out  overflow-hidden px-3 py-4 border bg-white rounded-xl border-solid border-[#FE6903] flex flex-col items-center justify-center gap-3  fixed top-5 left-1/2 -translate-x-1/2`}
     >
       <p className="self-start text-[24px] font-psemibold_600 tracking-wider">
         Price of Medicine
