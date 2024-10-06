@@ -1,0 +1,92 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: Poppins-Thin;
+  src: local("Poppins-Thin"),
+    url("./assets/fonts/Poppins-Thin.ttf") format("truetype");
+}
+@font-face {
+  font-family: Poppins-ExtraLight;
+  src: local("Poppins-ExtraLight"),
+    url("./assets/fonts/Poppins-ExtraLight.ttf") format("truetype");
+}
+@font-face {
+  font-family: Poppins-Light;
+  src: local("Poppins-Light"),
+    url("./assets/fonts/Poppins-Light.ttf") format("truetype");
+}
+@font-face {
+  font-family: Poppins-Regular;
+  src: local("Poppins-Regular"),
+    url("./assets/fonts/Poppins-Regular.ttf") format("truetype");
+}
+@font-face {
+  font-family: Poppins-Medium;
+  src: local("Poppins-Medium"),
+    url("./assets/fonts/Poppins-Medium.ttf") format("truetype");
+}
+@font-face {
+  font-family: Poppins-SemiBold;
+  src: local("Poppins-SemiBold"),
+    url("./assets/fonts/Poppins-SemiBold.ttf") format("truetype");
+}
+@font-face {
+  font-family: Poppins-Bold;
+  src: local("Poppins-Bold"),
+    url("./assets/fonts/Poppins-Bold.ttf") format("truetype");
+}
+@font-face {
+  font-family: Poppins-ExtraBold;
+  src: local("Poppins-ExtraBold"),
+    url("./assets/fonts/Poppins-ExtraBold.ttf") format("truetype");
+}
+@font-face {
+  font-family: Poppins-Black;
+  src: local("Poppins-Black"),
+    url("./assets/fonts/Poppins-Black.ttf") format("truetype");
+}
+
+html::-webkit-scrollbar {
+  width: 0.2rem;
+  scroll-behavior: smooth;
+}
+
+html::-webkit-scrollbar-track {
+  background: rgb(46, 46, 46);
+  border-radius: 1rem;
+}
+
+html::-webkit-scrollbar-thumb {
+  background: #fe5b00;
+  border-radius: 1rem;
+}
+.scroll::-webkit-scrollbar {
+  height: 0.6rem;
+  scroll-behavior: smooth;
+}
+
+.scroll::-webkit-scrollbar-track {
+  background: rgb(46, 46, 46);
+  border-radius: 1rem;
+}
+
+.scroll::-webkit-scrollbar-thumb {
+  background: #fe5b00;
+  border-radius: 1rem;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  overflow-x: hidden;
+}
+
+.opt-container {
+  @apply flex justify-between;
+}
+
+.opt-container input {
+  @apply flex py-5 outline-[#FE6903] bg-[#FE6903] bg-opacity-15 rounded-lg;
+}
