@@ -71,12 +71,7 @@ const Header = () => {
           </Link>
 
           {location.pathname === "/order" ? (
-            <button
-              onClick={(e) => {
-                e.preventDefault();
-                handleLogout();
-              }}
-            >
+            <button onClick={handleLogout}>
               <Button buttonName={"Logout"} />
             </button>
           ) : userExist ? (
@@ -159,9 +154,7 @@ const NavbarForSmallAndMedium = ({ setMenuBtn, menuBtn }) => {
       </Link>
 
       {location.pathname === "/order" ? (
-        <button
-        onClick={handleLogout}
-        >
+        <button onClick={handleLogout}>
           <Button buttonName={"Logout"} />
         </button>
       ) : userExist ? (
