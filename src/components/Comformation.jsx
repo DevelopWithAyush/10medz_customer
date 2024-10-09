@@ -3,10 +3,13 @@ import { HandleContext } from "../hooks/HandleState";
 import { FaPhone } from "react-icons/fa6";
 import axios from "axios";
 import { toast } from "react-hot-toast";
+import { useNavigate } from 'react-router-dom';
 const server = process.env.REACT_APP_API_URL;
 const Comformation = () => {
   const { confirmation, confirmationOpen, setConfirmationOpen, setOpenWapper } =
     useContext(HandleContext);
+  const navigate = useNavigate(); // Correct hook
+
 
   const handleOrderUpdate = async (id, orderStatus) => {
     const toastId = toast.loading("Please wait, updating the order...");
@@ -27,6 +30,8 @@ const Comformation = () => {
 
       toast.success(data.message, { id: toastId });
       setConfirmationOpen(false);
+      navigate("/order")
+      
     } catch (error) {
       toast.error(error?.response?.data?.message || "Something went wrong", {
         id: toastId,
